@@ -1,0 +1,156 @@
+body {
+  font-family: 'Annie Use Your Telescope';
+  font-size: 20px;
+}
+
+.container #play {
+  font-family: 'Annie Use Your Telescope';
+  font-size: 50px;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0,0,0,0);
+  border: none;
+  position: absolute;
+  color: rgb(255,150,0); 
+  top: 40%;
+  left: 50%;
+  outline: none;
+}
+
+.container #play:hover{
+  color: rgb(255,0,0);
+}
+
+.container #score {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  width: 50px;
+  background-color: rgb(0,0,0,0);
+  border: none;
+  transform: translate(-50%, -50%);
+}
+
+input[type=text], input[type=password] {
+  background-color: teal;
+  font-family: 'Annie Use Your Telescope';
+  font-size: 20px;
+  font-weight: bolder;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: 'Annie Use Your Telescope';
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgb(155,50,130);
+  color: orange;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+a {
+  color: teal;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.areaAuth {
+  padding: 16px;
+}
+
+.modal {
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%;
+  color: orange;
+  background-color: navy; 
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*eventualmente da qui in poi mettere in un altro file*/
+
+h1, h2 {
+	text-align: center;
+}
+
+.container #playground{
+	background-image: url("../img/369026.jpg");
+	background-size: 800px 500px;
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+img {
+	position: absolute;
+	display: none;
+}
+
+.sign_in_error{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin: auto;
+  width: 75%;
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.8);
+  border-radius: 4px;
+  color: rgb(132, 3, 3);
+  text-align: center;
+  text-shadow: 0 0 3px rgb(255, 255, 255);
+  padding: 5px;
+}
+
